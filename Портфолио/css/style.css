@@ -1,0 +1,116 @@
+body {
+  height: 100%;
+  background: #ffffff;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .header__logo {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .info .full__name {
+    font-size: 45px;
+  }
+
+  .age{
+    font-size: 20px;
+  }
+
+  .school{
+    font-size: 20px;
+  }
+  
+  .group{
+    font-size: 20px;
+  }
+
+  .info {
+    background-color: #ffffff;
+    padding: 10px 25px;
+  }
+  
+  .info__switch {
+    display: none;
+  }
+  
+  .info__body {
+    max-height: 10000;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+  
+  .info__switch:checked~.info__body {
+    max-height: 10px;
+  }
+  
+  .info__headline::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 13px;
+    border: 16px solid #000000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  
+  .info__switch:checked~.info__headline::before {
+    transform: rotate(180deg) translateY(6px);
+  }
+  
+  .info__headline {
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+    user-select: none;
+    color: #000000;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 45px;
+  }
+  
+  .labs {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .will{
+    float: right;
+    margin: 0 0 5px 5px;
+    margin-top: 20px;
+    margin-right: -4%;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 45px;
+  }
+
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }
+  
